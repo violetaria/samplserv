@@ -84,7 +84,7 @@ module Samplserv
 
     post "/workis" do
       version = params["v"] ? params["v"] : 1
-      spawn("afplay \"samples/WorkIt#{version}.mp3\"")
+      spawn("afplay \"samples/WorkIs#{version}.mp3\"")
     end
 
     post "/workit" do
