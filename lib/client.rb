@@ -86,15 +86,50 @@ end
 sampler = SamplParty.new("localhost","4567")
 
 sampler.beat
-sampler.workit(v: 1)
-sleep 2
-sampler.better(v: 1)
-sleep 2
-sampler.faster(v: 1)
-sleep 2
-sampler.stronger(v: 1)
-sleep 2
+sleep 51
 
+sampler.workit(v: 1)
+sleep 0.5
+sampler.makeit(v: 1)
+sleep 0.5
+sampler.doit(v: 1)
+sleep 0.5
+sampler.makeus(v: 1)
+sleep 15
+
+sampler.harder(v: 1)
+sleep 0.5
+sampler.better(v: 1)
+sleep 0.5
+sampler.faster(v: 1)
+sleep 0.5
+sampler.stronger(v: 1)
+sleep 10
+
+sampler.morethan(v: 1)
+sleep 0.5
+sampler.hour(v: 1)
+sleep 0.5
+sampler.our(v: 1)
+sleep 0.5
+sampler.never(v: 1)
+sleep 10
+
+sampler.ever(v: 1)
+sleep 0.5
+sampler.after(v: 1)
+sleep 0.5
+sampler.workis(v: 1)
+sleep 0.5
+sampler.over(v: 1)
+sleep 0.5
+sampler.over(v: 1)
+
+sampler.stop
 
 binding.pry
+
+
+
+
 
