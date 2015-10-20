@@ -6,7 +6,7 @@ class SamplParty
   base_uri "http://10.0.0.125:4567"
 
   def initialize(server=nil,port=nil)
-    #base_uri "http://#{server}:#{port}"
+    self.class.base_uri "http://#{server}:#{port}" if server && port
   end
 
   def after(options={})
@@ -81,6 +81,20 @@ class SamplParty
     SamplParty.get("/stop")
   end
 end
+
+
+sampler = SamplParty.new("localhost","4567")
+
+sampler.beat
+sampler.workit(v: 1)
+sleep 2
+sampler.better(v: 1)
+sleep 2
+sampler.faster(v: 1)
+sleep 2
+sampler.stronger(v: 1)
+sleep 2
+
 
 binding.pry
 
