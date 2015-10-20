@@ -12,7 +12,7 @@ module Samplserv
 
     post "/better" do
       version = params["v"] ? params["v"].to_i : 1
-      # binding.pry
+      #binding.pry
       spawn("afplay \"samples/Better#{version}.mp3\"")
 
     end
