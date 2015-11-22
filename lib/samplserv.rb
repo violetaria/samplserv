@@ -73,11 +73,7 @@ module Samplserv
     post "/morethan" do
       version = params["v"] ? params["v"] : 1
       spawn("afplay \"samples/MoreThan#{version}.mp3\"")
-<<<<<<< HEAD
-      "playing music..."
-=======
       puts "Play the song now..."
->>>>>>> 859495b044b3972bdb57ec5ad3a8f06c4bbc7d6d
     end
 
     post "/never" do 
